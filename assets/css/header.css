@@ -1,0 +1,114 @@
+#header_pri {
+   height: calc(1/12 * 100%);
+   /* background-color: var(--color-3); */
+   text-align: center;
+   display: flex;
+   color: var(--color-0);
+   box-shadow: var(--sombra-0);
+}
+
+#header_pri > button > img{
+   width: 40px;
+   height: 40px;
+   position: fixed;
+   top: 2%;
+   right: 3%;
+   border: 1px solid var(--grad-1);
+}
+
+#logoSitio {
+   width: 80px;
+   height: 80px;
+   padding: 35px 0 10px 10px;
+   transform: rotate(-30deg);
+   z-index: 10;
+}
+
+#menuPrincipal {
+   width: 60%;
+   height: 55%;
+   position: fixed;
+   top: calc(1/12 * 100% + 9px);
+   left: -62%;
+   background: linear-gradient(315deg, var(--color-1), var(--color-5a)70.71%);
+   box-shadow: var(--sombra-0);
+   font-size: var(--font-3);
+   z-index: 9;
+}
+
+#menuPrincipal ul {
+   display: flex;
+   flex-direction: column;
+   padding-top: 30%;
+}
+
+#menuPrincipal li {
+   margin: 4% 3%;
+   padding-bottom: 3%;
+   border-bottom: 2px solid var(--color-4a);
+}
+
+#menuPrincipal button{
+   margin: 4% 3%;
+   border: none;
+   font-size: var(--font-5);
+   font-weight: bold;
+   color: var(--color-btn);
+   background: transparent;
+}
+
+#menuPrincipal button:hover{
+   color: var(--color-6);
+   /* background: linear-gradient(315deg, var(--color-3), var(--color-6a)70.71%); */
+}
+
+#menuPrincipal a {
+   color: var(--color-1);
+   text-decoration: none;
+
+}
+
+#menuPrincipal a:link,
+#menuPrincipal a:visited #menuPrincipal a:active {
+   color: var(--color-0);
+   text-decoration: none;
+}
+
+#menuPrincipal a:hover {
+   color: var(--color-6);
+}
+
+
+
+#portada h1 {
+   padding: 30% 2% 5% 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (600px and down) */
+@media only screen and (max-width: 599px) {
+   #menuPrincipal>ul li {
+      display: inline;
+   }
+}
+
+/* Small devices (600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (1200px and up) */
+@media only screen and (min-width: 1200px) {}

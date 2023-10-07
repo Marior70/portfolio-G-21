@@ -1,0 +1,39 @@
+footer {
+   width: 100%;
+   height: calc(1.5 / 12 * 100%);
+   text-align: center;
+   font-size: var(--font-1);
+   background: url(../media/images/bg_footer-01.png) no-repeat bottom left;
+   background-attachment: cover;
+   /* background-color: var(--color-4); */
+   color: var(--color-6);
+   position: fixed;
+   bottom: 0;
+   left: 0;
+}
+
+footer a:link,
+footer a:visited footer a:active {
+   color: var(--color-4);
+   text-decoration: none;
+   /* border-bottom: 5 solid darkgray; */
+}
+
+footer a:nth-child(3n+1) {
+   font-size: var(--font-5);
+   color: var(--color-0);
+}
+
+footer a:nth-child(3n+2) {
+   font-size: var(--font-5);
+   color: var(--color-2);
+}
+
+footer a:nth-child(3n+3) {
+   font-size: var(--font-5);
+   color: var(--color-4);
+}
+
+footer a:hover {
+   color: var(--color-6);
+}

@@ -1,0 +1,112 @@
+{
+   "persona": {
+      "id": 1,
+      "nombres": "",
+      "apellidos": "",
+      "foto": "/assets/media/images/XXXX.png",
+      "titulo": "Web Developer Full Stack Python Jr",
+      "localidad": "Mar del Plata",
+      "provincia": "Buenos Aires",
+      "email": "micuenta@midominio.com",
+      "movil": "11 1234-5678",
+      "acercade": "...Actualmente, iniciándome en el Desarrollo Web."
+   },
+   "experiencias": [
+      {
+         "id": 1, 
+         "empresa": "",
+         "rol": "",
+         "logo": "./assets/media/images/logo_XXX.png",
+         "fechaIni": "",
+         "fechaFin": "",
+         "descripcion": ""
+      },
+            {
+         "id": 1, 
+         "empresa": "",
+         "rol": "",
+         "logo": "./assets/media/icons/logo_XXX.png",
+         "fechaIni": "",
+         "fechaFin": "",
+         "descripcion": ""
+      }
+   ],
+   "educacion": [
+      {
+         "id": 1,
+         "entidad": "",
+         "logo": "./assets/media/icons/logo_XXX.png",
+         "localidad": "",
+         "nivel": "",
+         "titulo": "",
+         "estado": "",
+         "fechaIni": "",
+         "fechaFin": ""
+      },
+      {
+         "id": 1,
+         "entidad": "",
+         "logo": "./assets/media/icons/logo_XXX.png",
+         "localidad": "",
+         "nivel": "",
+         "titulo": "",
+         "estado": "",
+         "fechaIni": "",
+         "fechaFin": ""
+      }
+   ],
+   "cursos": [
+      {
+         "id": 1,
+         "entidad": "",
+         "logo": "./assets/media/icons/logo_XXX.png",
+         "tema": "",
+         "fechaIni": "",
+         "fechaFin": ""
+      },
+      {
+         "id": 1,
+         "entidad": "",
+         "logo": "./assets/media/icons/logo_XXX.png",
+         "tema": "",
+         "fechaIni": "",
+         "fechaFin": ""
+      }
+   ],
+   "aptitudes": [
+      {
+         "id": 4,
+         "nombre": "Frontend: HTML/CSS/JS Bootstrap",
+         "valor": ""
+      },
+      {
+         "id": 3,
+         "nombre": "Backend: Python JWT MariaDB Django",
+         "valor": ""
+      },
+      {
+         "id": 2,
+         "nombre": "Trabajo en equipo",
+         "valor": "95"
+      },
+      {
+         "id": 1,
+         "nombre": "Responsabilidad",
+         "valor": "100"
+      }
+   ],
+   "proyectos": [
+      {
+          "id": 1,
+          "nombre": "",
+          "descripcion": "",
+          "link": ""
+      },
+      {
+          "id": 1,
+          "nombre": "",
+          "descripcion": "",
+          "link": ""
+      }
+   ]
+}
