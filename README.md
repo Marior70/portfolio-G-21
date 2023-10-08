@@ -1,5 +1,6 @@
 # Codo a Codo / 2023 - Full-Stack Python - 2C 
-*** Grupo 21:
+*** 	
+	Grupo 21:
 	1. Lucía Micaela Gonzales
 	2. Mario Rubén Lerman
 	3. Tobías Agustín Sosa Peralta

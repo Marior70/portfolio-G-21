@@ -96,9 +96,7 @@
 
 /* Extra small devices (600px and down) */
 @media only screen and (max-width: 599px) {
-   #menuPrincipal>ul li {
-      display: inline;
-   }
+   
 }
 
 /* Small devices (600px and up) */
@@ -111,4 +109,12 @@
 @media only screen and (min-width: 992px) {}
 
 /* Extra large devices (1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+   #menuPrincipal>ul li {
+      display: inline;
+   }
+   #btnMenuPrincipal{
+      display: none;
+   }
+
+}
