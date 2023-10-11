@@ -1,15 +1,61 @@
-body {
-    height: 100svh;
-    width: 100vw;
-}
-
 main {
     height: calc(7.5/12 * 100%);
-    /* background-color:var(--color-ter); */
+    margin: 4px;
+    padding: 4px 16px;
     color: var(--color-pri-inv);
-    font-size: var(--font-size-gral);
+    text-align: center;
 }
 
-main p {
-    text-align: center;
+#portadaFotos{
+    height: calc(7/10 * 100%);
+}
+
+#portadaTitulo{
+    margin: 16px 0;
+    height: calc(1.5/10 * 100%);
+    font-size: var(--font-2);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 35px;
+    box-shadow: var(--sombra-0);
+}
+
+#portadaAcercaDe{
+    margin: 16px 0;
+    height: calc(2.5/10 * 100%);
+    font-size: var(--font-1);
+}
+#fotoLmg{
+    width: 41.5%;
+    position: relative;
+    top: 1svh;
+    left: 29svw;
+    background-color: url(../media/images/foto_lmg.png) no-repeat center;
+    background-size: cover;
+    box-shadow: var(--sombra-0);
+    transform: rotate(-5deg);
+    z-index: 4;
+}
+
+#fotoMrl{
+    width: 38.7%;
+    position: relative;
+    top: -2svh;
+    left: 2vw;
+    background-color: url(../media/images/foto_mmg.png) no-repeat center;
+    background-size: cover;
+    box-shadow: var(--sombra-0);
+    transform: rotate(10deg);
+    z-index: 3;
+}
+
+#fotoTasp{
+    width: 38%;
+    position: relative;
+    top: -30svh;
+    left: 51svw;
+    background-color: url(../media/images/foto_tasp.png) no-repeat center;
+    background-size: cover;
+    box-shadow: var(--sombra-0);
+    transform: rotate(-15deg);
+    z-index: 2;
 }

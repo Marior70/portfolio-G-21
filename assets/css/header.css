@@ -1,120 +1,167 @@
-#header_pri {
-   height: calc(1/12 * 100%);
-   /* background-color: var(--color-3); */
+#headerPri {
+   height: 65px;
    text-align: center;
    display: flex;
-   color: var(--color-0);
+   justify-content: flex-end;
    box-shadow: var(--sombra-0);
-}
-
-#header_pri > button > img{
-   width: 40px;
-   height: 40px;
-   position: fixed;
-   top: 2%;
-   right: 3%;
-   border: 1px solid var(--grad-1);
 }
 
 #logoSitio {
-   width: 80px;
-   height: 80px;
-   padding: 35px 0 10px 10px;
-   transform: rotate(-30deg);
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   top: 20px;
+   left: 3svh;
+   border: 1px solid var(--grad-1);
+   transform: rotate(-25deg);
    z-index: 10;
 }
 
-#menuPrincipal {
-   width: 60%;
-   height: 55%;
+#headerPri button {
+   background-color: transparent;
+   border: none;
+}
+
+#btnMenuPri {
+   width: 40px;
+   height: 40px;
+   margin-right: 3vw;
+   position: absolute;
+   top: 15px;
+   right: 15px;
+   background: url(../media/icons/btnMenuPri.png) no-repeat center;
+   background-size: cover;
+}
+
+#menuPri>ul {
    position: fixed;
-   top: calc(1/12 * 100% + 9px);
-   left: -62%;
+   top: 70px;
+   /* top: 8.5svh; */
+   /* top: calc(1/12 * 100% + 9px); */
+   left: 0;
+
+   width: 60%;
+   height: 82svh; /* Ajustar al fijar alto de footer */
+   padding-top: 30%;
+
    background: linear-gradient(315deg, var(--color-1), var(--color-5a)70.71%);
    box-shadow: var(--sombra-0);
-   font-size: var(--font-3);
-   z-index: 9;
-}
 
-#menuPrincipal ul {
    display: flex;
    flex-direction: column;
-   padding-top: 30%;
+   justify-content: space-evenly;
+   align-items: center;
+   align-content: center;
+
+   list-style: none;
+   z-index: 9;
+
+   transform: translateX(-100%);
+   transition: transform 0.3s;
 }
 
-#menuPrincipal li {
-   margin: 4% 3%;
-   padding-bottom: 3%;
+#menuPri>ul.active {
+   transform: translate(0);
+}
+
+#menuPri>ul li {
+   width: 95%;
+   height: calc(82svh / 7);
+   margin: 5% 3%;
    border-bottom: 2px solid var(--color-4a);
 }
 
-#menuPrincipal button{
-   margin: 4% 3%;
-   border: none;
-   font-size: var(--font-5);
-   font-weight: bold;
-   color: var(--color-btn);
-   background: transparent;
-}
-
-#menuPrincipal button:hover{
-   color: var(--color-6);
-   /* background: linear-gradient(315deg, var(--color-3), var(--color-6a)70.71%); */
-}
-
-#menuPrincipal a {
+#menuPri a {
+   font-size: var(--font-4);
    color: var(--color-1);
    text-decoration: none;
-
 }
 
-#menuPrincipal a:link,
-#menuPrincipal a:visited #menuPrincipal a:active {
-   color: var(--color-0);
-   text-decoration: none;
+#menuPri i {
+   font-size: var(--font-7);
+   color: var(--noLogged);
+   border-bottom: none;
 }
 
-#menuPrincipal a:hover {
-   color: var(--color-6);
+#menuPri>ul li:last-child {
+   border-bottom: none;
 }
 
+/* ESTILOS RESPONSIVOS x BREAKPOINTS */
+@media only screen and (min-width: 576px) {}
 
-
-#portada h1 {
-   padding: 30% 2% 5% 2%;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Extra small devices (600px and down) */
-@media only screen and (max-width: 599px) {
-   
-}
-
-/* Small devices (600px and up) */
-@media only screen and (min-width: 600px) {}
-
-/* Medium devices (768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Large devices (992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (1200px and up) */
-@media only screen and (min-width: 1200px) {
-   #menuPrincipal>ul li {
-      display: inline;
+@media only screen and (min-width: 768px) {
+   #headerPri {
+      justify-content: flex-end;
+      align-items: center;
+      max-width: 1024px;
    }
-   #btnMenuPrincipal{
+
+   #menuPri>ul {
+      position: inherit;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      background: transparent;
+      box-shadow: none;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   #menuPri>ul li {
+      height: auto;
+      margin: 0 auto;
+      border-bottom: none;
+   }
+
+   #menuPri a {
+      padding: 0 10px;
+      font-size: var(--font-2);
+      color: var(--color-1);
+
+   }
+
+   #menuPri>ul li:hover {
+      color: var(--color-0);
+   }
+
+   #menuPri i {
+      font-size: var(--font-7);
+      color: var(--noLogged);
+      border-bottom: none;
+   }
+
+   #btnMenuPri {
       display: none;
    }
-
 }
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 1200px) {
+
+   /* #headerPri {
+      padding: 16px;
+      max-width: 1024px;
+   } */
+   #logoSitio {
+      left: calc((100vw - 1200px) / 2 + 3svh);
+   }
+}
+
+/* ANIMACIONES */
+
+/* @keyframes visibilidad {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+} */
+
+/* @keyframes vibrar{
+
+} */

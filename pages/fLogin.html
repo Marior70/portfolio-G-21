@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Acerca de</title>
+	<title>Portfolio Sign-In</title>
 	<link rel="icon" type="image/x-icon" href="../assets/media/icons/logo_g21.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="">
@@ -14,28 +14,29 @@
 </head>
 
 <body>
-	<header id="header_pri">
-		<div id="logoSitio">
+	<header id="headerPri">
+		
+		<a id="logoSitio" href="https://net-m.myddns.me">
+			<img src="../assets/media/icons/logo_g21.png" width="60" height="60" alt="" title="" />
+		</a>
 
-		</div>
-		<nav>
+		<nav id="menuPri">
 			<ul>
 				<li><a href="../index.html">Inicio</a></li>
-				<li><a href="../pages/acercade.html">Acerca de</a></li>
-				<li><a href="../pages/experiencia.html">Experiencia</a></li>
-				<li><a href="../pages/educacion.html">Educación</a></li>
-				<li><a href="../pages/aptitudes.html">Aptitudes</a></li>
-				<li><a href="../pages/proyectos.html">Proyectos</a></li>
-				<li><a href="../pages/fLogin.html">Login</a></li>
+				<li><a href="./experiencia.html">Experiencia</a></li>
+				<li><a href="./educacion.html">Educación</a></li>
+				<li><a href="./aptitudes.html">Aptitudes</a></li>
+				<li><a href="./proyectos.html">Proyectos</a></li>
+				<li><a href="./fLogin.html"><i class="bi bi-person-circle"></i></a></li>
 			</ul>
 		</nav>
-		<button id="btnMenuPrincipal" type="button">
-			<img src="./assets/media/icons/btn_menu_pri.png" alt="menuPrincipal">
-		</button>
+		
+		<button id="btnMenuPri" type="button"></button>
+		
 	</header>
 
 	<main>
-		<h2>Formularios en HTML</h2>
+		<h2>Bienvenido, por favor ingrese sus credenciales</h2>
 		<form action="">
 			<fieldset>
 				<legend>Abrir Portfolio</legend>
@@ -92,7 +93,7 @@
 		</section>
 
 	</footer>
-	<script src="./assets/js/scripts.js"></script>
+	<script src="../assets/js/scripts.js"></script>
 </body>
 
 </html>

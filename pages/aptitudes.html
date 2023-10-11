@@ -14,31 +14,32 @@
 </head>
 
 <body>
-	<header id="header_pri">
-		<div id="logoSitio">
+	<header id="headerPri">
+		
+		<a id="logoSitio" href="https://net-m.myddns.me">
+			<img src="../assets/media/icons/logo_g21.png" width="60" height="60" alt="" title="" />
+		</a>
 
-		</div>
-		<nav>
+		<nav id="menuPri">
 			<ul>
 				<li><a href="../index.html">Inicio</a></li>
-				<li><a href="../pages/acercade.html">Acerca de</a></li>
-				<li><a href="../pages/experiencia.html">Experiencia</a></li>
-				<li><a href="../pages/educacion.html">Educación</a></li>
-				<li><a href="../pages/aptitudes.html">Aptitudes</a></li>
-				<li><a href="../pages/proyectos.html">Proyectos</a></li>
-				<li><a href="../pages/fLogin.html">Login</a></li>
+				<li><a href="./experiencia.html">Experiencia</a></li>
+				<li><a href="./educacion.html">Educación</a></li>
+				<li><a href="./aptitudes.html">Aptitudes</a></li>
+				<li><a href="./proyectos.html">Proyectos</a></li>
+				<li><a href="./fLogin.html"><i class="bi bi-person-circle"></i></a></li>
 			</ul>
 		</nav>
-		<button id="btnMenuPrincipal" type="button">
-			<img src="./assets/media/icons/btn_menu_pri.png" alt="menuPrincipal">
-		</button>
+		
+		<button id="btnMenuPri" type="button"></button>
+		
 	</header>
 
 	<main>
 		<section id="apt-header">
 			<h2><i>Aptitudes</i></h2>
 			<div> <!-- Si es admin, mostrar botón para agregar aptitud -->
-				<button class="btn-nuevo" type="button" title="Agregar Aptitud">
+				<button class="btnNew" type="button" title="Agregar Aptitud">
 					<b>+</b>
 				</button>
 			</div>
@@ -52,10 +53,10 @@
 						<!-- mostrar aptitud 1 -->
 					</div>
 					<div>
-						<button class="btn-edt" type="button" title="Editar Aptitud">
+						<button class="btnEdt" type="button" title="Editar Aptitud">
 							<i class="bi bi-pen"></i>
 						</button>
-						<button class="btn-borrar" type="button" title="Borrar Aptitud">
+						<button class="btnDel" type="button" title="Borrar Aptitud">
 							<b>X</b>
 						</button>
 					</div>
@@ -66,10 +67,10 @@
 						<!-- mostrar aptitud 2 -->
 					</div>
 					<div>
-						<button class="btn-edt" type="button" title="Editar Aptitud">
+						<button class="btnEdt" type="button" title="Editar Aptitud">
 							<i class="bi bi-pen"></i>
 						</button>
-						<button class="btn-borrar" type="button" title="Borrar Aptitud">
+						<button class="btnDel" type="button" title="Borrar Aptitud">
 							<b>X</b>
 						</button>
 					</div>
@@ -80,10 +81,10 @@
 						<!-- mostrar aptitud 3 -->
 					</div>
 					<div>
-						<button class="btn-edt" type="button" title="Editar Aptitud">
+						<button class="btnEdt" type="button" title="Editar Aptitud">
 							<i class="bi bi-pen"></i>
 						</button>
-						<button class="btn-borrar" type="button" title="Borrar Aptitud">
+						<button class="btnDel" type="button" title="Borrar Aptitud">
 							<b>X</b>
 						</button>
 					</div>
@@ -94,10 +95,10 @@
 						<!-- mostrar aptitud 4 -->
 					</div>
 					<div>
-						<button class="btn-edt" type="button" title="Editar Aptitud">
+						<button class="btnEdt" type="button" title="Editar Aptitud">
 							<i class="bi bi-pen"></i>
 						</button>
-						<button class="btn-borrar" type="button" title="Borrar Aptitud">
+						<button class="btnDel" type="button" title="Borrar Aptitud">
 							<b>X</b>
 						</button>
 					</div>
@@ -156,7 +157,7 @@
 		</section>
 
 	</footer>
-	<script src="./assets/js/scripts.js"></script>
+	<script src="../assets/js/scripts.js"></script>
 </body>
 
 </html>

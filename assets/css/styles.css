@@ -5,18 +5,17 @@
 @import url("flogin.css");
 
 :root {
-    /* font-size: 10px;  */
+    font-size: 20px; 
     /* Declaración de constantes */
     --font-base: Quicksand, Roboto, Sans-serif;
-    --font-size: 20px;
-    --font-0: 0.4em;
-    --font-1: 0.6em;
-    --font-2: 0.8em;
-    --font-3: 1em;
-    --font-4: 1.2em;
-    --font-5: 1.4em;
-    --font-6: 1.6em;
-    --font-7: 1.8em;
+    --font-0: 0.4rem;
+    --font-1: 0.6rem;
+    --font-2: 0.8rem;
+    --font-3: 1rem;
+    --font-4: 1.2rem;
+    --font-5: 1.4rem;
+    --font-6: 1.6rem;
+    --font-7: 1.8rem;
 
     /* Declaración de Paleta de colores empleada */
     --color-0: rgb(36, 34, 28);
@@ -26,7 +25,13 @@
     --color-4: rgb(172, 167, 147);
     --color-5: rgb(200, 196, 183);
     --color-6: rgb(227, 226, 219);
-    --color-btn: rgb(80, 68, 22);
+    
+    --noLogged: navy;
+    --usrLogged: darkgreen;
+    --colorNew: green;
+    --colorEdt: blue;
+    --colorDel: red;
+    
     --color-0a: rgb(36, 34, 28, .8);
     --color-1a: rgb(72, 69, 55, .8);
     --color-2a: rgb(108, 103, 83, .8);
@@ -34,20 +39,24 @@
     --color-4a: rgb(172, 167, 147, .8);
     --color-5a: rgb(200, 196, 183, .8);
     --color-6a: rgb(227, 226, 219, .8);
+
     --sombra-0: 0 2px 5px rgba(72, 69, 55, 0.9), 0 3px 12px rgba(72, 69, 55, 0.5);
-    --grad-0: linear-gradient(0deg,var(--color-4),var(--color-6)70.71%);
-    --grad-1: linear-gradient(0deg,var(--color-1),var(--color-3)70.71%);
+    
+    --grad-0: linear-gradient(0deg, var(--color-4), var(--color-6)70.71%);
+    --grad-1: linear-gradient(0deg, var(--color-1), var(--color-3)70.71%);
 }
 
 *,
 html {
     margin: 0;
     padding: 0;
-    list-style: none;
 }
 
 html {
     box-sizing: border-box;
+    font-size: var(--font-size);
+    color: var(--color-2);
+    overflow: hidden;
 }
 
 *,
@@ -60,12 +69,45 @@ html {
     background: url(../media/images/bg-01.png) no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    overflow: hidden;
 }
+
+body{
+    height: 100svh;
+    width: 100svw;
+}
+
+.btnNew{
+    padding: 0 5px;
+    border-radius: 50%;
+    border:none;
+    background-color: var(--colorNew);
+    color: var(--color-6);
+}
+
+.btnEdt{
+    padding: 0 2px;
+    border-radius: 50%;
+    border:none;
+    background-color: var(--colorEdt);
+    color: var(--color-6);
+}
+
+.btnDel{
+    padding: 0 4px;
+    border-radius: 50%;
+    border:none;
+    background-color: var(--colorDel);
+    color: var(--color-6);
+}
+
+/* *****   *****   *****   *****   *****   *****   *****   *****   *****   *****   *****    */
 
 /* Medium devices (768px and up) */
 @media only screen and (min-width: 768px) {
     html {
         background-image: url(../media/images/bg-02.png);
+        overflow: visible;
     }
 }
 
