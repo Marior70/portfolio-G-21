@@ -1,8 +1,7 @@
 main {
-    height: 100%;
-    /* height: calc(7.5/12 * 100%); */
-    margin: 4px;
-    padding: 4px 16px;
+    /* height: 100%; */
+    height: calc(100% - 160px);
+    padding: 15px;
     color: var(--color-pri-inv);
     text-align: center;
 }
@@ -11,55 +10,52 @@ main {
 /* Acerca de */
 
 #portadaFotos {
-    height: calc(7/10 * 100%);
+    height: calc(1/2 * 100%);
 }
 
 #portadaTitulo {
-    margin: 16px 0;
-    height: calc(1.5/10 * 100%);
-    font-size: var(--font-2);
+    margin: 15px auto ;
+    padding: 15px;
+    height: calc(1/8 * 100%);
+    width: 80%;
+    font-size: var(--font-1);
     border-top-left-radius: 15px;
     border-bottom-right-radius: 35px;
     box-shadow: var(--sombra-0);
 }
 
 #portadaAcercaDe {
-    margin: 16px 0;
-    height: calc(2.5/10 * 100%);
+    margin: 15px auto;
+    padding: 15px;
+    height: calc(1/4 * 100%);
     font-size: var(--font-1);
 }
 
 #fotoLmg {
-    width: 41.5%;
+    width: 32.5%;
     position: relative;
     top: 1svh;
     left: 29svw;
-    background-color: url(../media/images/foto_lmg.png) no-repeat center;
-    background-size: cover;
     box-shadow: var(--sombra-0);
     transform: rotate(-5deg);
-    z-index: 4;
-}
-
-#fotoMrl {
-    width: 38.7%;
-    position: relative;
-    top: -2svh;
-    left: 2vw;
-    background-color: url(../media/images/foto_mmg.png) no-repeat center;
-    background-size: cover;
-    box-shadow: var(--sombra-0);
-    transform: rotate(10deg);
     z-index: 3;
 }
 
-#fotoTasp {
-    width: 38%;
+#fotoMrl {
+    width:31.7%;
     position: relative;
-    top: -30svh;
+    top: -1svh;
+    left: 10vw;
+    box-shadow: var(--sombra-0);
+    transform: rotate(10deg);
+    z-index: 4;
+}
+
+#fotoTasp {
+    width: 31%;
+    position: relative;
+    top: -18svh;
     left: 51svw;
-    background-color: url(../media/images/foto_tasp.png) no-repeat center;
-    background-size: cover;
     box-shadow: var(--sombra-0);
     transform: rotate(-15deg);
     z-index: 2;
@@ -128,3 +124,69 @@ main {
     border-bottom-right-radius: 35px;
     box-shadow: var(--brillo-0);
 }
+
+/* *****   *****   *****   *****   *****   *****   *****   *****   *****   *****   *****    */
+
+@media only screen and (min-width: 576px) {
+
+    #portadaFotos {
+        height: calc(1/2 * 100%);
+    }
+    
+    #portadaTitulo {
+        margin: 15px auto ;
+        padding: 15px;
+        height: calc(1/8 * 100%);
+        width: 80%;
+        font-size: var(--font-1);
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 35px;
+        box-shadow: var(--sombra-0);
+    }
+    
+    #portadaAcercaDe {
+        margin: 15px auto;
+        padding: 15px;
+        height: calc(1/4 * 100%);
+        font-size: var(--font-1);
+    }
+    
+    #fotoLmg {
+        width: 32.5%;
+        position: relative;
+        top: 1svh;
+        left: 29svw;
+        box-shadow: var(--sombra-0);
+        transform: rotate(-5deg);
+        z-index: 3;
+    }
+    
+    #fotoMrl {
+        width:31.7%;
+        position: relative;
+        top: -1svh;
+        left: 10vw;
+        box-shadow: var(--sombra-0);
+        transform: rotate(10deg);
+        z-index: 4;
+    }
+    
+    #fotoTasp {
+        width: 31%;
+        position: relative;
+        top: -18svh;
+        left: 51svw;
+        box-shadow: var(--sombra-0);
+        transform: rotate(-15deg);
+        z-index: 2;
+    }
+ }
+ 
+ @media only screen and (min-width: 768px) {
+ 
+    
+ }
+ 
+ @media only screen and (min-width: 992px) {}
+ 
+ @media only screen and (min-width: 1200px) {}
