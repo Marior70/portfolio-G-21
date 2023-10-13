@@ -5,7 +5,7 @@
 @import url("flogin.css");
 
 :root {
-    font-size: 20px; 
+    font-size: 20px;
     /* Declaración de constantes */
     --font-base: Quicksand, Roboto, Sans-serif;
     --font-0: 0.4rem;
@@ -25,13 +25,16 @@
     --color-4: rgb(172, 167, 147);
     --color-5: rgb(200, 196, 183);
     --color-6: rgb(227, 226, 219);
-    
+
     --noLogged: navy;
     --usrLogged: darkgreen;
     --colorNew: green;
+    --colorNew-a: rgba(0, 255, 0, .7);
     --colorEdt: blue;
+    --colorEdt-a: rgba(0, 0, 255, .3);
     --colorDel: red;
-    
+    --colorDel-a: rgba(255, 0, 0, .4);
+
     --color-0a: rgb(36, 34, 28, .8);
     --color-1a: rgb(72, 69, 55, .8);
     --color-2a: rgb(108, 103, 83, .8);
@@ -41,7 +44,8 @@
     --color-6a: rgb(227, 226, 219, .8);
 
     --sombra-0: 0 2px 5px rgba(72, 69, 55, 0.9), 0 3px 12px rgba(72, 69, 55, 0.5);
-    
+    --brillo-0: 0 2px 5px rgba(172, 167, 147,0.9), 0 3px 12px rgba(172, 167, 147,0.1);
+
     --grad-0: linear-gradient(0deg, var(--color-4), var(--color-6)70.71%);
     --grad-1: linear-gradient(0deg, var(--color-1), var(--color-3)70.71%);
 }
@@ -72,33 +76,52 @@ html {
     overflow: hidden;
 }
 
-body{
+body {
     height: 100svh;
     width: 100svw;
 }
 
-.btnNew{
+.btnNew {
+    margin-left: 2vw;
     padding: 0 5px;
     border-radius: 50%;
-    border:none;
+    border: none;
     background-color: var(--colorNew);
     color: var(--color-6);
 }
 
-.btnEdt{
+.btnNew:hover {
+    cursor: pointer;
+    background-color: var(--colorNew-a);
+    color: var(--color-0);
+}
+
+.btnEdt {
     padding: 0 2px;
     border-radius: 50%;
-    border:none;
+    border: none;
     background-color: var(--colorEdt);
     color: var(--color-6);
 }
 
-.btnDel{
+.btnEdt:hover {
+    cursor: pointer;
+    background-color: var(--colorEdt-a);
+    color: var(--color-0);
+}
+
+.btnDel {
     padding: 0 4px;
     border-radius: 50%;
-    border:none;
+    border: none;
     background-color: var(--colorDel);
     color: var(--color-6);
+}
+
+.btnDel:hover {
+    cursor: pointer;
+    background-color: var(--colorDel-a);
+    color: var(--color-0);
 }
 
 /* *****   *****   *****   *****   *****   *****   *****   *****   *****   *****   *****    */
