@@ -1,39 +1,220 @@
 footer {
    width: 100%;
    height: calc(1.5 / 12 * 100%);
-   text-align: center;
-   font-size: var(--font-1);
-   background: url(../media/images/bg_footer-01.png) no-repeat bottom left;
-   background-attachment: cover;
-   /* background-color: var(--color-4); */
-   color: var(--color-6);
+
    position: fixed;
    bottom: 0;
    left: 0;
+
+   /* background-color: var(--color-4); */
+   background: url(../media/images/bg_footer-01.png) no-repeat;
+   /* background-attachment: fixed; */
+   background-size: cover;
+}
+
+.pEncab {
+   grid-area: pieEncab;
+   margin: 15px 0 0 23px;
+   text-align: left;
+   font-size: var(--font-0);
+   color: var(--color-6);
+   /* border: 1px solid green; */
+}
+
+.pInteg {
+   grid-area: pieInteg;
+   font-size: var(--font-0);
+   color: var(--color-0);
+   /* font-weight: bold; */
+   text-align: right;
+   /* border: 1px solid black; */
+}
+
+.pTecno {
+   grid-area: pieTecno;
+   font-size: var(--font-1);
+   font-weight: bold;
+   font-style: italic;
+   text-align: center;
+   /* border: 1px solid blue; */
+}
+
+.pCright {
+   grid-area: pieCright;
+   font-size: var(--font-0);
+   color: var(--color-0);
+   text-align: left;
+   /* border: 1px solid red; */
+}
+
+.pieLayout {
+   display: grid;
+   grid-row: auto;
+   grid-column: auto;
+   gap: 2%;
+   grid-template-areas:
+      'pieEncab pieEncab pieEncab . . . . . . . . .'
+      'pieEncab pieEncab pieEncab . . . . . . . . .'
+      '. . pieInteg pieInteg pieInteg pieInteg pieInteg pieInteg . pieTecno pieTecno pieTecno'
+      '. . pieInteg pieInteg pieInteg pieInteg pieInteg pieInteg . pieTecno pieTecno pieTecno'
+      '. . pieInteg pieInteg pieInteg pieInteg pieInteg pieInteg . pieCright pieCright pieCright';
+   padding: 0 5px 0 15px;
 }
 
 footer a:link,
 footer a:visited footer a:active {
+   margin-left: 2px;
    color: var(--color-4);
    text-decoration: none;
-   /* border-bottom: 5 solid darkgray; */
-}
-
-footer a:nth-child(3n+1) {
-   font-size: var(--font-5);
-   color: var(--color-0);
 }
 
 footer a:nth-child(3n+2) {
-   font-size: var(--font-5);
-   color: var(--color-2);
+   margin-left: 5px;
+   color: var(--color-mail);
 }
 
 footer a:nth-child(3n+3) {
-   font-size: var(--font-5);
-   color: var(--color-4);
+   color: var(--color-wsp);
+}
+
+footer a:nth-child(3n+1) {
+   color: var(--color-github);
 }
 
 footer a:hover {
-   color: var(--color-6);
+   color: var(--color-0);
 }
+
+#pTecno:first-child,
+#pTecno:last-child {
+   position: relative;
+   top: 10px;
+}
+
+/*****   *****   *****   *****   *****   *****   *****   *****   *****   *****/
+/* ESTILOS RESPONSIVOS x BREAKPOINTS */
+@media only screen and (min-width: 576px) {}
+
+@media only screen and (min-width: 768px) {
+   footer {
+      width: 100%;
+      height: calc(1.5 / 12 * 100%);
+
+      position: fixed;
+      bottom: 0;
+      left: 0;
+
+      /* background-color: var(--color-4); */
+      background: url(../media/images/bg_footer-02.png) no-repeat;
+      /* background-attachment: fixed; */
+      background-size: cover;
+   }
+
+   .pEncab {
+      grid-area: pieEncab;
+      margin: 15px 0 0 23px;
+      text-align: left;
+      font-size: var(--font-0);
+      color: var(--color-6);
+      /* border: 1px solid green; */
+   }
+
+   .pInteg {
+      grid-area: pieInteg;
+      font-size: var(--font-0);
+      color: var(--color-0);
+      /* font-weight: bold; */
+      text-align: right;
+      /* border: 1px solid black; */
+   }
+
+   .pTecno {
+      grid-area: pieTecno;
+      font-size: var(--font-1);
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      /* border: 1px solid blue; */
+   }
+
+   .pCright {
+      grid-area: pieCright;
+      font-size: var(--font-0);
+      color: var(--color-0);
+      text-align: left;
+      /* border: 1px solid red; */
+   }
+
+   .pieLayout {
+      display: grid;
+      grid-row: auto;
+      grid-column: auto;
+      gap: 2%;
+      grid-template-areas:
+         'pieEncab pieEncab pieEncab . . . . . . . . .'
+         'pieEncab pieEncab pieEncab . . . . . . . . .'
+         '. . pieInteg pieInteg pieInteg pieInteg pieInteg pieInteg . pieTecno pieTecno pieTecno'
+         '. . pieInteg pieInteg pieInteg pieInteg pieInteg pieInteg . pieTecno pieTecno pieTecno'
+         '. . pieInteg pieInteg pieInteg pieInteg pieInteg pieInteg . pieCright pieCright pieCright';
+      padding: 0 5px 0 15px;
+   }
+
+   footer a:link,
+   footer a:visited footer a:active {
+      margin-left: 2px;
+      color: var(--color-4);
+      text-decoration: none;
+   }
+
+   footer a:nth-child(3n+2) {
+      margin-left: 5px;
+      color: var(--color-mail);
+   }
+
+   footer a:nth-child(3n+3) {
+      color: var(--color-wsp);
+   }
+
+   footer a:nth-child(3n+1) {
+      color: var(--color-github);
+   }
+
+   footer a:hover {
+      color: var(--color-0);
+   }
+
+   #pTecno:first-child,
+   #pTecno:last-child {
+      position: relative;
+      top: 10px;
+   }
+}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 1200px) {
+
+   /* #headerPri {
+      padding: 16px;
+      max-width: 1024px;
+   } */
+   #logoSitio {
+      left: calc((100vw - 1200px) / 2 + 3svh);
+   }
+}
+
+/* ANIMACIONES */
+
+/* @keyframes visibilidad {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+} */
+
+/* @keyframes vibrar{
+
+} */

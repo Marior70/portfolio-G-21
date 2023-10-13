@@ -26,15 +26,6 @@
     --color-5: rgb(200, 196, 183);
     --color-6: rgb(227, 226, 219);
 
-    --noLogged: navy;
-    --usrLogged: darkgreen;
-    --colorNew: green;
-    --colorNew-a: rgba(0, 255, 0, .7);
-    --colorEdt: blue;
-    --colorEdt-a: rgba(0, 0, 255, .3);
-    --colorDel: red;
-    --colorDel-a: rgba(255, 0, 0, .4);
-
     --color-0a: rgb(36, 34, 28, .8);
     --color-1a: rgb(72, 69, 55, .8);
     --color-2a: rgb(108, 103, 83, .8);
@@ -44,23 +35,29 @@
     --color-6a: rgb(227, 226, 219, .8);
 
     --sombra-0: 0 2px 5px rgba(72, 69, 55, 0.9), 0 3px 12px rgba(72, 69, 55, 0.5);
-    --brillo-0: 0 2px 5px rgba(172, 167, 147,0.9), 0 3px 12px rgba(172, 167, 147,0.1);
+    --brillo-0: 0 2px 5px rgba(172, 167, 147, 0.9), 0 3px 12px rgba(172, 167, 147, 0.1);
 
     --grad-0: linear-gradient(0deg, var(--color-4), var(--color-6)70.71%);
     --grad-1: linear-gradient(0deg, var(--color-1), var(--color-3)70.71%);
+
+    --noLogged: navy;
+    --usrLogged: darkgreen;
+    --colorNew: green;
+    --colorNew-a: rgba(0, 255, 0, .7);
+    --colorEdt: blue;
+    --colorEdt-a: rgba(0, 0, 255, .3);
+    --colorDel: red;
+    --colorDel-a: rgba(255, 0, 0, .4);
+    --color-wsp: green;
+    --color-mail: blue;
+    --color-github: black;
 }
 
 *,
 html {
     margin: 0;
     padding: 0;
-}
-
-html {
     box-sizing: border-box;
-    font-size: var(--font-size);
-    color: var(--color-2);
-    overflow: hidden;
 }
 
 *,
@@ -70,10 +67,13 @@ html {
 }
 
 html {
+    font-size: var(--font-size);
+    color: var(--color-2);
+    overflow: hidden;
+
     background: url(../media/images/bg-01.png) no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    overflow: hidden;
 }
 
 body {
@@ -132,6 +132,13 @@ body {
         background-image: url(../media/images/bg-02.png);
         overflow: visible;
     }
+
+    header,
+    main,
+    footer {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
 }
 
 /* Large devices (992px and up) */
@@ -145,12 +152,5 @@ body {
 @media only screen and (min-width: 1200px) {
     html {
         background-image: url(../media/images/bg-04.png);
-    }
-
-    header,
-    main,
-    footer {
-        margin: auto;
-        max-width: 1200px;
     }
 }
