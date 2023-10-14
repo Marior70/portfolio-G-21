@@ -51,6 +51,14 @@
     --color-wsp: green;
     --color-mail: blue;
     --color-github: black;
+    --color-std1: tomato;
+    --color-std2: orange;
+    --color-std3: dodgerblue;
+    --color-std4: mediumseagreen;
+    --color-std5: gray;
+    --color-std6: slateblue;
+    --color-std7: violet;
+    --color-std8: lightgray;
 }
 
 *,
@@ -122,6 +130,10 @@ body {
     cursor: pointer;
     background-color: var(--colorDel-a);
     color: var(--color-0);
+}
+
+.oculto {
+    display: none;
 }
 
 /* *****   *****   *****   *****   *****   *****   *****   *****   *****   *****   *****    */

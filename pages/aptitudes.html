@@ -15,7 +15,7 @@
 
 <body>
 	<header id="headerPri">
-		
+
 		<a id="logoSitio" href="https://net-m.myddns.me">
 			<img src="../assets/media/icons/logo_g21.png" width="60" height="60" alt="" title="" />
 		</a>
@@ -30,29 +30,41 @@
 				<li><a href="./fLogin.html"><i class="bi bi-person-circle"></i></a></li>
 			</ul>
 		</nav>
-		
+
 		<button id="btnMenuPri" type="button"></button>
-		
+
 	</header>
 
 	<main>
-		<section id="apt-header">
+		<section id="aptHeader">
 			<h2><i>Aptitudes</i></h2>
-			<div> <!-- Si es admin, mostrar botón para agregar aptitud -->
+			<div class="oculto"> <!-- Si es admin, mostrar botón para agregar aptitud -->
 				<button class="btnNew" type="button" title="Agregar Aptitud">
 					<b>+</b>
 				</button>
 			</div>
 		</section>
 
-		<section id="apt-main">
+		<section id="aptMain">
+			<div class="aptPtjes">
+				<div class="ptje">100%</div>
+				<div class="ptje">90%</div>
+				<div class="ptje">80%</div>
+				<div class="ptje">70%</div>
+				<div class="ptje">60%</div>
+				<div class="ptje">50%</div>
+				<div class="ptje">40%</div>
+				<div class="ptje">30%</div>
+				<div class="ptje">20%</div>
+				<div class="ptje">10%</div>
+				<div class="ptje">0%</div>
+			</div>
 			<ul>
 				<li>
-					<p><i class="bi bi-briefcase"></i>Nombre de aptitud 1</p>
-					<div>
-						<!-- mostrar aptitud 1 -->
+					<div class="aptItem">
+						<div id="valor1">Trabajo en equipo</div>
 					</div>
-					<div>
+					<div class="oculto">
 						<button class="btnEdt" type="button" title="Editar Aptitud">
 							<i class="bi bi-pen"></i>
 						</button>
@@ -62,11 +74,10 @@
 					</div>
 				</li>
 				<li>
-					<p><i class="bi bi-briefcase"></i>Nombre de aptitud 2</p>
-					<div>
-						<!-- mostrar aptitud 2 -->
+					<div class="aptItem">
+						<div id="valor2">Responsabilidad</div>
 					</div>
-					<div>
+					<div class="oculto">
 						<button class="btnEdt" type="button" title="Editar Aptitud">
 							<i class="bi bi-pen"></i>
 						</button>
@@ -76,11 +87,10 @@
 					</div>
 				</li>
 				<li>
-					<p><i class="bi bi-briefcase"></i>Nombre de aptitud 3</p>
-					<div>
-						<!-- mostrar aptitud 3 -->
+					<div class="aptItem">
+						<div id="valor3">HTML-5></div>
 					</div>
-					<div>
+					<div class="oculto">
 						<button class="btnEdt" type="button" title="Editar Aptitud">
 							<i class="bi bi-pen"></i>
 						</button>
@@ -90,11 +100,10 @@
 					</div>
 				</li>
 				<li>
-					<p><i class="bi bi-briefcase"></i>Nombre de aptitud 4</p>
-					<div>
-						<!-- mostrar aptitud 4 -->
+					<div class="aptItem">
+						<div id="valor4">CSS-3</div>
 					</div>
-					<div>
+					<div class="oculto">
 						<button class="btnEdt" type="button" title="Editar Aptitud">
 							<i class="bi bi-pen"></i>
 						</button>
@@ -103,19 +112,31 @@
 						</button>
 					</div>
 				</li>
-			</ul>
+				<li>
+					<div class="aptItem">
+						<div id="valor5">JS</div>
+					</div>
+					<div class="oculto">
+						<button class="btnEdt" type="button" title="Editar Aptitud">
+							<i class="bi bi-pen"></i>
+						</button>
+						<button class="btnDel" type="button" title="Borrar Aptitud">
+							<b>X</b>
+						</button>
+					</div>
+				</li>
+			</ul>		
+					
+					
+					
+					
+				
+					
+				
+
+			
 		</section>
-		<aside>
-			<article>
-				<h3>Título articulo 1</h3>
-			</article>
-			<article>
-				<h3>Título articulo 2</h3>
-			</article>
-			<article>
-				<h3>Título articulo 3</h3>
-			</article>
-		</aside>
+
 	</main>
 
 	<footer class="pieLayout">

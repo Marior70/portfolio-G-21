@@ -1,5 +1,4 @@
 main {
-    /* height: 100%; */
     height: calc(100% - 160px);
     padding: 15px;
     color: var(--color-pri-inv);
@@ -8,13 +7,12 @@ main {
 
 /*****   *****   *****   *****   *****   *****   *****   *****   *****   *****/
 /* Acerca de */
-
 #portadaFotos {
     height: calc(1/2 * 100%);
 }
 
 #portadaTitulo {
-    margin: 15px auto ;
+    margin: 15px auto;
     padding: 15px;
     height: calc(1/8 * 100%);
     width: 80%;
@@ -42,7 +40,7 @@ main {
 }
 
 #fotoMrl {
-    width:31.7%;
+    width: 31.7%;
     position: relative;
     top: -1svh;
     left: 10vw;
@@ -125,16 +123,130 @@ main {
     box-shadow: var(--brillo-0);
 }
 
-/* *****   *****   *****   *****   *****   *****   *****   *****   *****   *****   *****    */
+/*****   *****   *****   *****   *****   *****   *****   *****   *****   *****/
+/* Educación */
 
+
+/*****   *****   *****   *****   *****   *****   *****   *****   *****   *****/
+/* Aptitudes */
+#aptHeader {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 7% 3%;
+}
+
+#aptMain {
+    display: flex;
+    justify-content: space-between;
+    margin: 23% auto;
+    background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: var(--brillo-0);
+}
+
+#aptMain>ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    width: 100%;
+    font-size: var(--font-0);
+    list-style: none;
+}
+
+.aptPtjes {
+    font-size: var(--font-1);
+}
+
+.ptje {
+    padding: 8px 0px;
+}
+
+.aptPtjes>div:first-child{
+    padding: 0;
+}
+
+.aptPtjes>div:last-child{
+    padding: 0;
+}
+
+#aptMain>ul li {
+    width: calc(1/5*100%);
+}
+
+.aptItem>div {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#aptMain>ul li:nth-child(1)>div>div {
+    background-color: var(--color-std3);
+    color:var(--color-6);
+}
+
+#aptMain>ul li:nth-child(2)>div>div {
+    background-color: var(--color-std6);
+    color:var(--color-6);
+}
+
+#aptMain>ul li:nth-child(3)>div>div {
+    background-color: var(--color-std8);
+}
+
+#aptMain>ul li:nth-child(4)>div>div {
+    background-color: var(--color-std7);
+    color:var(--color-6);
+}
+
+#aptMain>ul li:nth-child(5)>div>div {
+    background-color: var(--color-std4);
+    color:var(--color-6);
+}
+
+#aptMain>ul li:nth-child(1) {
+    height: 95%;
+    background-image: linear-gradient(to bottom, var(--color-6), var(--color-1));
+}
+
+#aptMain>ul li:nth-child(2) {
+    height: 100%;
+    background-image: linear-gradient(to bottom, var(--color-6), var(--color-1));
+}
+
+#aptMain>ul li:nth-child(3) {
+    height: 70%;
+    background-image: linear-gradient(to bottom, var(--color-6), var(--color-1));
+}
+
+#aptMain>ul li:nth-child(4) {
+    height: 65%;
+    background-image: linear-gradient(to bottom, var(--color-6), var(--color-1));
+}
+
+#aptMain>ul li:nth-child(5) {
+    height: 50%;
+    background-image: linear-gradient(to bottom, var(--color-6), var(--color-1));
+}
+
+/*****   *****   *****   *****   *****   *****   *****   *****   *****   *****/
+/* Proyectos */
+
+
+
+
+/*****   *****   *****   *****   *****   *****   *****   *****   *****   *****/
+/*****   *****   *****   *****   *****   *****   *****   *****   *****   *****/
+/* Breakpoints */
 @media only screen and (min-width: 576px) {
 
+    /****   *****   *****   *****   *****   *****   *****   *****   *****   ***/
+    /* Portada / Acerca de */
     #portadaFotos {
         height: calc(1/2 * 100%);
     }
-    
+
     #portadaTitulo {
-        margin: 15px auto ;
+        margin: 15px auto;
         padding: 15px;
         height: calc(1/8 * 100%);
         width: 80%;
@@ -143,14 +255,14 @@ main {
         border-bottom-right-radius: 35px;
         box-shadow: var(--sombra-0);
     }
-    
+
     #portadaAcercaDe {
         margin: 15px auto;
         padding: 15px;
         height: calc(1/4 * 100%);
         font-size: var(--font-1);
     }
-    
+
     #fotoLmg {
         width: 32.5%;
         position: relative;
@@ -160,9 +272,9 @@ main {
         transform: rotate(-5deg);
         z-index: 3;
     }
-    
+
     #fotoMrl {
-        width:31.7%;
+        width: 31.7%;
         position: relative;
         top: -1svh;
         left: 10vw;
@@ -170,7 +282,7 @@ main {
         transform: rotate(10deg);
         z-index: 4;
     }
-    
+
     #fotoTasp {
         width: 31%;
         position: relative;
@@ -180,13 +292,24 @@ main {
         transform: rotate(-15deg);
         z-index: 2;
     }
- }
- 
- @media only screen and (min-width: 768px) {
- 
-    
- }
- 
- @media only screen and (min-width: 992px) {}
- 
- @media only screen and (min-width: 1200px) {}
+}
+
+@media only screen and (min-width: 768px) {
+
+    /****   *****   *****   *****   *****   *****   *****   *****   *****   ***/
+    /* Portada / Acerca de */
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    /****   *****   *****   *****   *****   *****   *****   *****   *****   ***/
+    /* Portada / Acerca de */
+
+}
+
+@media only screen and (min-width: 1200px) {
+    /****   *****   *****   *****   *****   *****   *****   *****   *****   ***/
+    /* Portada / Acerca de */
+
+}
