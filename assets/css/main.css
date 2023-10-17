@@ -1,7 +1,6 @@
 main {
     height: calc(100% - 160px);
     padding: 15px;
-    color: var(--color-pri-inv);
     text-align: center;
 }
 
@@ -9,14 +8,45 @@ main {
 /* Acerca de */
 #portadaFotos {
     height: calc(1/2 * 100%);
+    padding-top: calc(1/2 * 100% /4);
+}
+
+#portadaFotos img {
+    width: 100px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: var(--color-3);
+    box-shadow: var(--sombra-0);
+}
+
+#portadaFotos>img:nth-child(1) {
+    position: relative;
+    top: 70px;
+    left: 30px;
+    transform: rotate(19deg);
+    z-index: 1;
+}
+
+#portadaFotos>img:nth-child(2) {
+    transform: rotate(4deg);
+    z-index: 2;
+}
+
+#portadaFotos>img:nth-child(3) {
+    position: relative;
+    top: 65px;
+    left: -30px;
+    transform: rotate(-15deg);
+    z-index: -1;
 }
 
 #portadaTitulo {
-    margin: 15px auto;
-    padding: 15px;
+    margin: 0 auto;
+    padding: 10px;
     height: calc(1/8 * 100%);
     width: 80%;
-    font-size: var(--font-1);
+    font-size: var(--font-2);
+    color: blue;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 35px;
     box-shadow: var(--sombra-0);
@@ -29,35 +59,6 @@ main {
     font-size: var(--font-1);
 }
 
-#fotoLmg {
-    width: 32.5%;
-    position: relative;
-    top: 1svh;
-    left: 29svw;
-    box-shadow: var(--sombra-0);
-    transform: rotate(-5deg);
-    z-index: 3;
-}
-
-#fotoMrl {
-    width: 31.7%;
-    position: relative;
-    top: -1svh;
-    left: 10vw;
-    box-shadow: var(--sombra-0);
-    transform: rotate(10deg);
-    z-index: 4;
-}
-
-#fotoTasp {
-    width: 31%;
-    position: relative;
-    top: -18svh;
-    left: 51svw;
-    box-shadow: var(--sombra-0);
-    transform: rotate(-15deg);
-    z-index: 2;
-}
 
 /*****   *****   *****   *****   *****   *****   *****   *****   *****   *****/
 /* Experiencias */
@@ -125,7 +126,60 @@ main {
 
 /*****   *****   *****   *****   *****   *****   *****   *****   *****   *****/
 /* Educación */
+#eduHeader {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 7% 3%;
+}
 
+.eduLogo {
+    grid-area: eLogo;
+    ;
+}
+
+.eduInstitucion {
+    grid-area: eInstitucion;
+    font-size: var(--font-2);
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px var(--color-2);
+    text-align: center;
+}
+
+.eduTitulo {
+    grid-area: eTitulo;
+    font-size: var(--font-1);
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.eduPeriodo {
+    grid-area: ePeriodo;
+    font-size: var(--font-2);
+    font-weight: bold;
+    text-align: center;
+}
+
+.eduEdt {
+    grid-area: eEdt;
+}
+
+.eduLayout {
+    display: grid;
+    grid-template-areas:
+        'eLogo ePeriodo ePeriodo ePeriodo'
+        'eLogo eInstitucion eInstitucion eInstitucion'
+        'eLogo eTitulo eTitulo eTitulo'
+        'eEdt . . .';
+    grid-gap: 3px;
+    padding: 15px;
+    margin-bottom: 2vh;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 35px;
+    box-shadow: var(--brillo-0);
+}
 
 /*****   *****   *****   *****   *****   *****   *****   *****   *****   *****/
 /* Aptitudes */
@@ -149,7 +203,7 @@ main {
     justify-content: space-around;
     align-items: end;
     width: 100%;
-    font-size: var(--font-0);
+    font-size: var(--font-1);
     list-style: none;
 }
 
@@ -161,11 +215,11 @@ main {
     padding: 8px 0px;
 }
 
-.aptPtjes>div:first-child{
+.aptPtjes>div:first-child {
     padding: 0;
 }
 
-.aptPtjes>div:last-child{
+.aptPtjes>div:last-child {
     padding: 0;
 }
 
@@ -181,12 +235,12 @@ main {
 
 #aptMain>ul li:nth-child(1)>div>div {
     background-color: var(--color-std3);
-    color:var(--color-6);
+    color: var(--color-6);
 }
 
 #aptMain>ul li:nth-child(2)>div>div {
     background-color: var(--color-std6);
-    color:var(--color-6);
+    color: var(--color-6);
 }
 
 #aptMain>ul li:nth-child(3)>div>div {
@@ -195,12 +249,12 @@ main {
 
 #aptMain>ul li:nth-child(4)>div>div {
     background-color: var(--color-std7);
-    color:var(--color-6);
+    color: var(--color-6);
 }
 
 #aptMain>ul li:nth-child(5)>div>div {
     background-color: var(--color-std4);
-    color:var(--color-6);
+    color: var(--color-6);
 }
 
 #aptMain>ul li:nth-child(1) {
@@ -235,63 +289,64 @@ main {
 
 
 /*****   *****   *****   *****   *****   *****   *****   *****   *****   *****/
-/*****   *****   *****   *****   *****   *****   *****   *****   *****   *****/
 /* Breakpoints */
 @media only screen and (min-width: 576px) {
 
     /****   *****   *****   *****   *****   *****   *****   *****   *****   ***/
     /* Portada / Acerca de */
+    main {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
     #portadaFotos {
-        height: calc(1/2 * 100%);
+        width: calc(1/2 * 100%);
+        margin: 15px 100px;
+    }
+
+    #portadaFotos img {
+        width: 150px;
+        height: 165px;
+    }
+
+    #portadaFotos>img:nth-child(1) {
+        top: -140px;
+        left: 95px;
+    }
+
+    #portadaFotos>img:nth-child(2) {
+        position: relative;
+        top: -180px;
+        left: -20px;
+    }
+
+    #portadaFotos>img:nth-child(3) {
+        top: -220px;
+        left: 90px;
     }
 
     #portadaTitulo {
         margin: 15px auto;
         padding: 15px;
         height: calc(1/8 * 100%);
-        width: 80%;
-        font-size: var(--font-1);
+        width: 50%;
+        font-size: var(--font-5);
         border-top-left-radius: 15px;
         border-bottom-right-radius: 35px;
         box-shadow: var(--sombra-0);
     }
 
     #portadaAcercaDe {
-        margin: 15px auto;
-        padding: 15px;
+        margin: 50px auto;
+        padding: 50px;
+        width: 60%;
         height: calc(1/4 * 100%);
-        font-size: var(--font-1);
+        font-size: var(--font-3);
+        text-align: justify;
     }
 
-    #fotoLmg {
-        width: 32.5%;
-        position: relative;
-        top: 1svh;
-        left: 29svw;
-        box-shadow: var(--sombra-0);
-        transform: rotate(-5deg);
-        z-index: 3;
-    }
 
-    #fotoMrl {
-        width: 31.7%;
-        position: relative;
-        top: -1svh;
-        left: 10vw;
-        box-shadow: var(--sombra-0);
-        transform: rotate(10deg);
-        z-index: 4;
-    }
-
-    #fotoTasp {
-        width: 31%;
-        position: relative;
-        top: -18svh;
-        left: 51svw;
-        box-shadow: var(--sombra-0);
-        transform: rotate(-15deg);
-        z-index: 2;
-    }
 }
 
 @media only screen and (min-width: 768px) {
