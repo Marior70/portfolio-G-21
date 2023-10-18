@@ -9,7 +9,7 @@ footer {
    font-size: var(--font-0);
    color: var(--color-0);
 
-   background: url(../media/images/bg_footer-576.png) no-repeat;
+   background: url(../media/images/bg_footer-576.png) no-repeat center;
    background-size: 100% 100%;
 
    display: flex;
@@ -76,14 +76,14 @@ footer a:hover {
 /* ESTILOS RESPONSIVOS x BREAKPOINTS */
 @media only screen and (min-width: 576px) {
    footer {
-      background: url(../media/images/bg_footer-768.png) no-repeat;
+      background: url(../media/images/bg_footer-768.png) no-repeat center;
       background-size: 100% 100%;
    }
 }
 
 @media only screen and (min-width: 768px) {
    footer {
-      background: url(../media/images/bg_footer-992.png) no-repeat;
+      background: url(../media/images/bg_footer-992.png) no-repeat center;
       background-size: 100% 100%;
       font-size: var(--font-2);
    }
@@ -122,16 +122,25 @@ footer a:hover {
 
 @media only screen and (min-width: 992px) {
    footer {
-      background: url(../media/images/bg_footer-1200.png) no-repeat;
+      background: url(../media/images/bg_footer-1200.png) no-repeat center;
       background-size: 100% 100%;
    }
+
+   /* #logoSitio {
+      left: calc((100vw - 1200px) / 2 + 3svh);
+   } */
+
 }
 
 @media only screen and (min-width: 1200px) {
-
-   #logoSitio {
-      left: calc((100vw - 1200px) / 2 + 3svh);
+   footer {
+      background: url(../media/images/bg_footer-1360.png) no-repeat center;
+      background-size: 100% 100%;
    }
+
+   /* #logoSitio {
+      left: calc((100vw - 1200px) / 2 + 3svh);
+   } */
 
 }
 
