@@ -1,51 +1,63 @@
 footer {
-   width: 100%;
    height: 96px;
+   width: 100%;
 
    position: fixed;
    bottom: 0;
    left: 0;
+
+   margin: 0 auto;
 
    font-size: var(--font-0);
    color: var(--color-0);
 
    background: url(../media/images/bg_footer-576.png) no-repeat center;
    background-size: 100% 100%;
-
-   display: flex;
 }
 
-footer>section {
+.fh {
+   display: flex;
+   flex-direction: row;
+}
+
+.fv {
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
-   height: 96px;
-   width: 50%;
+   /* flex-wrap: nowrap; */
 }
 
+.c1 {
+   width: 70%;
+}
+
+/* .c2 {
+   width: 50%;
+} */
+
 .pEncab {
-   /* height: 46px; */
-   padding: 10px 0 0 10vw;
-   /* text-align: center; */
+   margin: 12px 0 0 12%;
    color: var(--color-6);
 }
 
-footer main {
-   /* height: 50px; */
-   padding: 5px 0 0 10vw;
-   /* padding: 5px 5px 0 15px; */
+#grupo{
+   margin-top:10px;
 }
 
 .pInteg {
+   margin: 0 10% 0 0;
    text-align: right;
 }
 
 .pTecno {
-   margin: 36px 0 0 110px;
+   width: 100%;
+   margin: 35px 20% 0 0;
+   text-align: right;
 }
 
 .pCright {
-   padding: 5px 0 0 40px;
+   width: 100%;
+   margin: 10px 20% 0 0;
+   text-align: right;
 }
 
 footer a:link,
@@ -79,57 +91,87 @@ footer a:hover {
       background: url(../media/images/bg_footer-768.png) no-repeat center;
       background-size: 100% 100%;
    }
+   .pEncab {
+      margin: 12px 0 0 18%;
+      color: var(--color-6);
+   }
+   
+   .pInteg {
+      margin: 0 20% 0 0;
+      text-align: right;
+   }
+   
+   .pTecno {
+      width: 100%;
+      margin: 35px 20% 0 25%;
+      text-align: right;
+   }
+   
+   .pCright {
+      width: 100%;
+      margin: 10px 10% 0 40%;
+      text-align: right;
+   }
+  
 }
 
 @media only screen and (min-width: 768px) {
    footer {
       background: url(../media/images/bg_footer-992.png) no-repeat center;
       background-size: 100% 100%;
-      font-size: var(--font-2);
-   }
-   .pEncab {
-      padding: 10px 2vw 0 0;
+      /* font-size: var(--font-2); */
    }
    
-   footer main {
-      /* height: 50px; */
-      padding: 5px 0 0 10vw;
-      /* padding: 5px 5px 0 15px; */
+   .pEncab {
+      margin: 12px 0 0 18%;
+      color: var(--color-6);
    }
-
+   
+   .pInteg {
+      margin: 0 18% 0 0;
+      text-align: right;
+   }
+   
+   .pTecno {
+      width: 100%;
+      margin: 35px 0 0 35%;
+      text-align: right;
+   }
+   
+   .pCright {
+      width: 100%;
+      margin: 10px 0 0 50%;
+      text-align: right;
+   }
 }
-
 
 @media only screen and (min-width: 992px) {
    footer {
       background: url(../media/images/bg_footer-1200.png) no-repeat center;
       background-size: 100% 100%;
    }
-   /* .pEncab {
-      height: 40%;
-      padding-top: 6px;
-      margin-right: 220px;
+
+   .pEncab {
+      margin: 12px 0 0 20%;
+      color: var(--color-6);
    }
-
-   footer main {
-      height: 60%;
-      padding: 0 5px 0 15px;
-      display: flex;
-      flex-direction: column;
-   } */
-
-   /* .pInteg {} */
-
-   /* .pTecno {
+   
+   .pInteg {
+      margin: 0 30% 0 0;
       text-align: right;
-      padding: 1.8rem 3.5rem 0 0;
    }
-
+   
+   .pTecno {
+      width: 100%;
+      margin: 35px 0 0 80%;
+      text-align: right;
+   }
+   
    .pCright {
+      width: 100%;
+      margin: 10px 0 0 100%;
       text-align: right;
-      padding: 0 0.6rem;
-      font-size: var(--font-1);
-   } */
+   }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -143,6 +185,27 @@ footer a:hover {
       left: calc((100vw - 1200px) / 2 + 3svh);
    }
 
+   .pEncab {
+      margin: 12px 0 0 20%;
+      color: var(--color-6);
+   }
+   
+   .pInteg {
+      margin: 0 30% 0 0;
+      text-align: right;
+   }
+   
+   .pTecno {
+      width: 100%;
+      margin: 35px 0 0 80%;
+      text-align: right;
+   }
+   
+   .pCright {
+      width: 100%;
+      margin: 10px 0 0 100%;
+      text-align: right;
+   }
 }
 
 /* ANIMACIONES */

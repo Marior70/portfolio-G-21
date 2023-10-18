@@ -1,4 +1,4 @@
-main {
+body>main {
     height: calc(100% - 160px);
     padding: 15px;
     text-align: center;
