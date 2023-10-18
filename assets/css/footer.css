@@ -1,6 +1,6 @@
 footer {
    width: 100%;
-   height: calc(1.6 / 12 * 100%);
+   height: 96px;
 
    position: fixed;
    bottom: 0;
@@ -19,18 +19,21 @@ footer>section {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+   height: 96px;
+   width: 50%;
 }
 
 .pEncab {
-   height: 47px;
-   padding: 15px 35px 0 2px;
-   text-align: center;
+   /* height: 46px; */
+   padding: 10px 0 0 10vw;
+   /* text-align: center; */
    color: var(--color-6);
 }
 
 footer main {
-   height: 50px;
-   padding: 0 5px 0 15px;
+   /* height: 50px; */
+   padding: 5px 0 0 10vw;
+   /* padding: 5px 5px 0 15px; */
 }
 
 .pInteg {
@@ -38,14 +41,11 @@ footer main {
 }
 
 .pTecno {
-   width: 45vw;
-   text-align: right;
-   padding: 40px 20px 0 0;
+   margin: 36px 0 0 110px;
 }
 
 .pCright {
-   text-align: right;
-   padding: 5px 10px 0 0;
+   padding: 5px 0 0 40px;
 }
 
 footer a:link,
@@ -69,7 +69,7 @@ footer a:nth-child(3n+1) {
 }
 
 footer a:hover {
-   color: var(--color-0);
+   color: var(--color-6);
 }
 
 /*****   *****   *****   *****   *****   *****   *****   *****   *****   *****/
@@ -87,34 +87,14 @@ footer a:hover {
       background-size: 100% 100%;
       font-size: var(--font-2);
    }
-
    .pEncab {
-      width: 30vw;
-      height: 60px;
-      padding: 0.4rem 0 0 2rem;
+      padding: 10px 2vw 0 0;
    }
-
+   
    footer main {
-      height: 70px;
-      padding: 0 5px 0 15px;
-      display: flex;
-      flex-direction: column;
-   }
-
-   .pInteg {
-      
-   }
-
-   .pTecno {
-      width: 50vw;
-      text-align: right;
-      padding: 2.5rem 2.5rem 0 0;
-   }
-
-   .pCright {
-      text-align: right;
-      padding: 0.5rem 0 0 0;
-      font-size: var(--font-1);
+      /* height: 50px; */
+      padding: 5px 0 0 10vw;
+      /* padding: 5px 5px 0 15px; */
    }
 
 }
@@ -125,12 +105,38 @@ footer a:hover {
       background: url(../media/images/bg_footer-1200.png) no-repeat center;
       background-size: 100% 100%;
    }
+   /* .pEncab {
+      height: 40%;
+      padding-top: 6px;
+      margin-right: 220px;
+   }
+
+   footer main {
+      height: 60%;
+      padding: 0 5px 0 15px;
+      display: flex;
+      flex-direction: column;
+   } */
+
+   /* .pInteg {} */
+
+   /* .pTecno {
+      text-align: right;
+      padding: 1.8rem 3.5rem 0 0;
+   }
+
+   .pCright {
+      text-align: right;
+      padding: 0 0.6rem;
+      font-size: var(--font-1);
+   } */
 }
 
 @media only screen and (min-width: 1200px) {
    footer {
       background: url(../media/images/bg_footer-1360.png) no-repeat center;
       background-size: 100% 100%;
+      left: calc((100svw - 1200px) / 2);
    }
 
    #logoSitio {

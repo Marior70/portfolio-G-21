@@ -4,10 +4,37 @@
 @import url("footer.css");
 @import url("flogin.css");
 
+
+@media only screen and (min-width: 576px) {
+    :root {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    :root {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    :root {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    :root {
+        font-size: 24px;
+    }
+}
+
 :root {
     font-size: 20px;
     /* Declaración de constantes */
-    --font-base: Quicksand, Roboto, Sans-serif;
+    --font-base: Quicksand,
+        Roboto,
+        Sans-serif;
     --font-0: 0.5rem;
     --font-1: 0.6rem;
     --font-2: 0.8rem;
@@ -34,8 +61,10 @@
     --color-5a: rgb(200, 196, 183, .8);
     --color-6a: rgb(227, 226, 219, .8);
 
-    --sombra-0: 0 2px 5px rgba(72, 69, 55, 0.9), 0 3px 12px rgba(72, 69, 55, 0.5);
-    --brillo-0: 0 2px 5px rgba(172, 167, 147, 0.9), 0 3px 12px rgba(172, 167, 147, 0.1);
+    --sombra-0: 0 2px 5px rgba(72, 69, 55, 0.9),
+        0 3px 12px rgba(72, 69, 55, 0.5);
+    --brillo-0: 0 2px 5px rgba(172, 167, 147, 0.9),
+        0 3px 12px rgba(172, 167, 147, 0.1);
 
     --grad-0: linear-gradient(0deg, var(--color-4), var(--color-6)70.71%);
     --grad-1: linear-gradient(0deg, var(--color-1), var(--color-3)70.71%);
@@ -74,7 +103,7 @@ html {
     box-sizing: inherit;
 }
 
-html {
+/* html {
     font-size: var(--font-size);
     color: var(--color-2);
     overflow: hidden;
@@ -83,10 +112,18 @@ html {
     background-attachment: fixed;
     background-size: cover;
 }
-
+ */
 body {
     height: 100svh;
     width: 100svw;
+
+    font-size: var(--font-size);
+    color: var(--color-2);
+    overflow: hidden;
+
+    background: url(../media/images/bg-01.png) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .btnNew {
