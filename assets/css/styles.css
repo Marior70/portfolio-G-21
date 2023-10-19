@@ -2,7 +2,7 @@
 @import url("header.css");
 @import url("main.css");
 @import url("footer.css");
-@import url("flogin.css");
+@import url("fLogin.css");
 
 
 @media only screen and (min-width: 576px) {
@@ -71,6 +71,11 @@
 
     --noLogged: navy;
     --usrLogged: darkgreen;
+    --color-ok: greenyellow;
+    --color-wrong: orangered;
+    --color-null: dodgerblue;
+    --color-req: mistyrose;
+
     --colorNew: green;
     --colorNew-a: rgba(0, 255, 0, .7);
     --colorEdt: blue;
@@ -173,8 +178,20 @@ body {
     display: none;
 }
 
-/* *****   *****   *****   *****   *****   *****   *****   *****   *****   *****   *****    */
+.disable {
+    opacity: 0.6;
+    cursor: default;
+}
 
+.txt-sombra {
+    text-shadow: 3px 1px 3px black;
+}
+
+.transp {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+/* *****   *****   *****   *****   *****   *****   *****   *****   *****   *****   *****    */
 /* Medium devices (768px and up) */
 @media only screen and (min-width: 768px) {
     html {

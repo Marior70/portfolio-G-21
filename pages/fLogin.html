@@ -36,22 +36,33 @@
 	</header>
 
 	<main>
-		<h2>Bienvenido, por favor ingrese sus credenciales</h2>
-		<form action="">
+		<form id="fLogin" class="transp" action="" method="post" enctype="text/plain">
 			<fieldset>
-				<legend>Abrir Portfolio</legend>
-				<div>
-					<label for="inputUsernameID">Nombre de Usuario</label>
-					<input type="text" name="username" id="inputUsernameID" placeholder="Ingresa tu nombre de usuario" />
-				</div>
-				<div>
-					<label for="inputClaveID">Contraseña</label>
-					<input type="password" name="password" id="inputClaveID" placeholder="Ingresa tu clave" />
-				</div>
-				<br>
-				<button name="btnEnviar" type="submit">Enviar</button>
+				<legend>Abrir Portfolio para edición</legend>
+				<label for="inputUsernameID">Nombre de Usuario</label>
+				<input type="text" name="username" id="inputUsernameID" size="25" minlength="3" maxlength="30" pattern="/\d+$/g" placeholder="Ingrese su nombre de usuario" required />
+				<!-- aria-placeholder="" value="Pepe None"  -->
+				<p></p> <!-- Mensaje de error a manejar con JS -->
+				
+				<!-- 
+				<label for="email">input type="email"</label>
+				<input type="email" name="email" id="#" size="50" minlength="8" maxlength="50"
+					pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g" placeholder="Ingrese su cuenta de email" />
+				 -->
+					<!-- value="micuenta@midominio.com"  -->
+				<!--<p></p> Mensaje de error a manejar con JS -->
+				
+				<label for="inputClaveID">Contraseña</label>
+				<input type="password" name="password" id="inputClaveID" size="25" minlength="8" maxlength="12" pattern=""
+					placeholder="Ingrese su clave" />
+				<p></p> <!-- Mensaje de error a manejar con JS -->
 			</fieldset>
+			
+			<button id="btnLogin" name="btnLogin" type="submit">Login</button>
 		</form>
+
+					
+				
 	</main>
 
 	<footer class="fh">

@@ -1,3 +1,4 @@
+
 /* manejo del menu responsive */
 let btnMenuPri = document.querySelector('#btnMenuPri');
 let linksMenuPri = document.querySelector('#menuPri>ul');
@@ -7,11 +8,14 @@ btnMenuPri.addEventListener('click', () => {
 });
 
 /* 
+Barra de progreso animada
+
 <div class="w3-light-grey">
 <div id="myBar" class="w3-container w3-green" style="height:24px;width:1%"></div>
 </div>
 
 <button class="w3-button w3-light-grey" onclick="move()">Click Me</button>
+
 
 <script>
 function move() {
@@ -27,4 +31,5 @@ function frame() {
   }
 }
 }
-</script>  */
+</script>
+*/

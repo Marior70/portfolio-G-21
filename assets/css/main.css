@@ -1,3 +1,5 @@
+@import url(./pagination.css);
+
 body>main {
     height: calc(100% - 160px);
     padding: 15px;
@@ -244,7 +246,7 @@ body>main {
 }
 
 #aptMain>ul li:nth-child(3)>div>div {
-    background-color: var(--color-std8);
+    background-color: var(--color-std2);
 }
 
 #aptMain>ul li:nth-child(4)>div>div {
