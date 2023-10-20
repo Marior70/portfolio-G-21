@@ -7,10 +7,6 @@ btnMenuPri.addEventListener('click', () => {
     linksMenuPri.classList.toggle('active');
 });
 
-let ancho = screen.width;
-let alto = screen.height;
-alert(` pantalla: (${ancho}:${alto}) px `);
-
 /* 
 Barra de progreso animada
 
