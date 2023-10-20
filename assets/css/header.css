@@ -110,7 +110,7 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      transform: translateX(0);
+      /* transform: translateX(0); */
    }
 
    #menuPri>ul li {

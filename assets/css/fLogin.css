@@ -3,6 +3,7 @@
    width: 90%;
    margin: calc(100vh / 4) auto;
    padding: 25px;
+   background-color: var(--color-neg-a);
    border: 1px solid rgb(255, 193, 93);
    border-top-left-radius: 1rem;
    border-bottom-right-radius: 3rem;
@@ -41,7 +42,6 @@ input {
    background-color: var(--color-4a);
    border-top-left-radius: 1rem;
    border-bottom-right-radius: 3rem;
-   box-shadow: 0 3px 7px rgba(65, 39, 22, 0.945), 0 2px 10px rgba(197, 147, 96, 0.74);
 }
 
 input:invalid {
@@ -57,29 +57,20 @@ input:valid {
    color: red;
 }
 
-*:required {
-   background-color: var(--color-req);
-}
-
-*:disabled {
-   cursor: default;
-   opacity: 0.6;
-}
-
 .joinBtn:active {
-   box-shadow: 2px 2px 5px #fc894d;
+   box-shadow: 2px 2px 5px var(--color-active) ;
 }
 
 input:autofill {
-   border: 3px solid darkorange;
+   border: 3px solid var(--color-autofill);
 }
 
 input:-webkit-autofill {
-   border: 3px solid darkorange;
+   border: 3px solid var(--color-autofill);
 }
 
-div:empty {
-   outline: 2px solid var(--color-vacio);
+input:empty {
+   outline: 1px solid var(--color-null);
    height: 1em;
 }
 

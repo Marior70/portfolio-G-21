@@ -36,7 +36,7 @@
 	</header>
 
 	<main>
-		<form id="fLogin" class="transp" action="" method="post" enctype="text/plain">
+		<form id="fLogin" action="" method="post" enctype="text/plain">
 			<fieldset>
 				<legend>Abrir Portfolio para edición</legend>
 				<label for="inputUsernameID">Nombre de Usuario</label>
@@ -53,7 +53,7 @@
 				<!--<p></p> Mensaje de error a manejar con JS -->
 				
 				<label for="inputClaveID">Contraseña</label>
-				<input type="password" name="password" id="inputClaveID" size="25" minlength="8" maxlength="12" pattern=""
+				<input type="password" name="password" id="inputClaveID" size="25" minlength="8" maxlength="12" pattern="/\d+$/g"
 					placeholder="Ingrese su clave" />
 				<p></p> <!-- Mensaje de error a manejar con JS -->
 			</fieldset>

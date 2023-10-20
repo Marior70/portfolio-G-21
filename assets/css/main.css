@@ -26,12 +26,12 @@ body>main {
     top: 70px;
     left: 30px;
     transform: rotate(19deg);
-    z-index: 1;
+    z-index: 2;
 }
 
 #portadaFotos>img:nth-child(2) {
     transform: rotate(4deg);
-    z-index: 2;
+    z-index: 3;
 }
 
 #portadaFotos>img:nth-child(3) {
@@ -39,7 +39,7 @@ body>main {
     top: 65px;
     left: -30px;
     transform: rotate(-15deg);
-    z-index: -1;
+    z-index: 1;
 }
 
 #portadaTitulo {

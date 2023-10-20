@@ -69,6 +69,8 @@
     --grad-0: linear-gradient(0deg, var(--color-4), var(--color-6)70.71%);
     --grad-1: linear-gradient(0deg, var(--color-1), var(--color-3)70.71%);
 
+    --color-neg-a: rgba(0, 0, 0, 0.7);
+
     --noLogged: navy;
     --usrLogged: darkgreen;
     --color-ok: greenyellow;
@@ -108,16 +110,15 @@ html {
     box-sizing: inherit;
 }
 
-/* html {
-    font-size: var(--font-size);
-    color: var(--color-2);
-    overflow: hidden;
-
-    background: url(../media/images/bg-01.png) no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+*:required {
+    background-color: var(--color-req);
 }
- */
+
+*:disabled {
+    cursor: default;
+    opacity: 0.6;
+}
+
 body {
     height: 100svh;
     width: 100svw;
@@ -181,14 +182,6 @@ body {
 .disable {
     opacity: 0.6;
     cursor: default;
-}
-
-.txt-sombra {
-    text-shadow: 3px 1px 3px black;
-}
-
-.transp {
-    background-color: rgba(0, 0, 0, 0.55);
 }
 
 /* *****   *****   *****   *****   *****   *****   *****   *****   *****   *****   *****    */
