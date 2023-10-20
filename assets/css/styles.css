@@ -127,7 +127,7 @@ body {
     color: var(--color-2);
     overflow: hidden;
 
-    background: url(../media/images/bg-01.png) no-repeat;
+    background: url(../media/images/bg-01-768x1250.png) no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -188,7 +188,9 @@ body {
 /* Medium devices (768px and up) */
 @media only screen and (min-width: 768px) {
     html {
-        background-image: url(../media/images/bg-02.png);
+        background: url(../media/images/bg-02-996x560.png) no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
         overflow: visible;
     }
 
@@ -203,13 +205,17 @@ body {
 /* Large devices (992px and up) */
 @media only screen and (min-width: 992px) {
     html {
-        background-image: url(../media/images/bg-03.png);
+        background: url(../media/images/bg-03-1200x683.png) no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
     }
 }
 
 /* Extra large devices (1200px and up) */
 @media only screen and (min-width: 1200px) {
     html {
-        background-image: url(../media/images/bg-04.png);
+        background: url(../media/images/bg-05-1920x1080.png) no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
     }
 }
